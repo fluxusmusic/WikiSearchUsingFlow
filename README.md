@@ -4,7 +4,7 @@ WikiSearch Application.
 
 
 ## App Module.
-MVVM, Kotlin, Coroutines
+MVI, Kotlin, Coroutines, Flow
 
 ## Remote Module
 
