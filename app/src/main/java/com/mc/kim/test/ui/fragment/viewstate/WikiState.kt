@@ -6,7 +6,10 @@ import com.mc.kim.test.dao.response.WikiDataList
 
 sealed class WikiState {
     object Idle : WikiState()
-    object Loading :WikiState()
-    data class ResultData(val result: ResponseResult<WikiData>) : WikiState()
-    data class ResultDataList(val result: ResponseResult<WikiDataList>) : WikiState()
+    object Loading : WikiState()
+    data class ResultData(val result: ResponseResult.Success<WikiData>) : WikiState()
+    data class ResultDataList(val result: ResponseResult.Success<WikiDataList>) : WikiState()
+
+    data class Error(val error: ResponseResult.Error) : WikiState()
+    data class Fail(val fail: ResponseResult.Fail) : WikiState()
 }

@@ -57,12 +57,37 @@ class SearchHomeViewModel internal constructor(
     private fun getSearchResult(keyword: String) = viewModelScope.launch {
         currentKeyword = keyword
         _data.emit(WikiState.Loading)
-        _data.emit(WikiState.ResultData(wikiRepository.searchSummary(keyword)))
+
+        val result = wikiRepository.searchSummary(keyword)
+        when(result){
+            is ResponseResult.Success->{
+                _data.emit(WikiState.ResultData(result))
+            }
+            is ResponseResult.Error->{
+                _data.emit(WikiState.Error(result))
+            }
+
+            is ResponseResult.Fail->{
+                _data.emit(WikiState.Fail(result))
+            }
+        }
     }
 
    private fun getRelatedList(wikiData: WikiData) = viewModelScope.launch {
        _data.emit(WikiState.Loading)
-       _data.emit(WikiState.ResultDataList(wikiRepository.loadRelatedList(wikiData)))
+       val result = wikiRepository.loadRelatedList(wikiData)
+       when(result){
+           is ResponseResult.Success->{
+               _data.emit(WikiState.ResultDataList(result))
+           }
+           is ResponseResult.Error->{
+               _data.emit(WikiState.Error(result))
+           }
+
+           is ResponseResult.Fail->{
+               _data.emit(WikiState.Fail(result))
+           }
+       }
     }
 
 

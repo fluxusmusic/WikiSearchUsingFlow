@@ -134,61 +134,32 @@ class SearchHomeFragment : Fragment() {
 
                         }
                         is WikiState.ResultData -> {
-                            makeResult(adapter,state.result)
+                            adapter.reset()
+                            adapter.addItem(
+                                WikiRow.HeaderWikiRow(state.result.data, resourceLoader).apply {
+                                    onItemClickListener = _onItemClickListener
+                                })
+                            loadRelatedContents(state.result.data)
                         }
                         is WikiState.ResultDataList -> {
-                            makeRelateResult(adapter,state.result)
+                            val wikiDataList = state.result.data.pages
+                            for (wikiData in wikiDataList) {
+                                adapter.addItem(WikiRow.RelatedWikiRow(wikiData, resourceLoader).apply {
+                                    onItemClickListener = _onItemClickListener
+                                })
+                            }
+                        }
+
+                        is WikiState.Error->{
+                            state.error.makeResult(resources, childFragmentManager)
+                        }
+                        is WikiState.Fail->{
+                            state.fail.makeResult(resources, childFragmentManager)
                         }
                     }
 
                 }
             }
-        }
-    }
-
-    private fun makeResult(adapter: SearchResultAdapter, result: ResponseResult<WikiData>) {
-        when (result) {
-            is ResponseResult.Success -> {
-                adapter.reset()
-                adapter.addItem(
-                    WikiRow.HeaderWikiRow(result.data, resourceLoader).apply {
-                        onItemClickListener = _onItemClickListener
-                    })
-                loadRelatedContents(result.data)
-            }
-
-            is ResponseResult.Error -> {
-                result.makeResult(resources, childFragmentManager)
-            }
-
-            is ResponseResult.Fail -> {
-                result.makeResult(resources, childFragmentManager)
-            }
-        }
-    }
-
-    private fun makeRelateResult(
-        adapter: SearchResultAdapter,
-        result: ResponseResult<WikiDataList>
-    ) {
-        when (result) {
-            is ResponseResult.Success -> {
-                val wikiDataList = result.data.pages
-                for (wikiData in wikiDataList) {
-                    adapter.addItem(WikiRow.RelatedWikiRow(wikiData, resourceLoader).apply {
-                        onItemClickListener = _onItemClickListener
-                    })
-                }
-            }
-
-            is ResponseResult.Error -> {
-                result.makeResult(resources, childFragmentManager)
-            }
-
-            is ResponseResult.Fail -> {
-                result.makeResult(resources, childFragmentManager)
-            }
-
         }
     }
 
