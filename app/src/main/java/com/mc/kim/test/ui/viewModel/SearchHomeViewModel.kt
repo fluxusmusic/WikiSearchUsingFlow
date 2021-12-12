@@ -56,13 +56,13 @@ class SearchHomeViewModel internal constructor(
 
     private fun getSearchResult(keyword: String) = viewModelScope.launch {
         currentKeyword = keyword
-        _data.value = WikiState.Loading
-        _data.value = WikiState.ResultData(wikiRepository.searchSummary(keyword))
+        _data.emit(WikiState.Loading)
+        _data.emit(WikiState.ResultData(wikiRepository.searchSummary(keyword)))
     }
 
    private fun getRelatedList(wikiData: WikiData) = viewModelScope.launch {
-       _data.value = WikiState.Loading
-       _data.value = WikiState.ResultDataList(wikiRepository.loadRelatedList(wikiData))
+       _data.emit(WikiState.Loading)
+       _data.emit(WikiState.ResultDataList(wikiRepository.loadRelatedList(wikiData)))
     }
 
 

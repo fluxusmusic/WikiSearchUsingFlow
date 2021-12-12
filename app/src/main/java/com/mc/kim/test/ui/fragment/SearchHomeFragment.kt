@@ -127,6 +127,9 @@ class SearchHomeFragment : Fragment() {
                         Log.d(TAG, "state : ${state}")
                     }
                     when (state) {
+                        is WikiState.Idle->{
+
+                        }
                         is WikiState.Loading -> {
 
                         }
