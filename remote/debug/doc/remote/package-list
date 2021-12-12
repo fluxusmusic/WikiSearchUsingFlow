@@ -1,0 +1,90 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.mc.kim.remote.annotation////PointingToDeclaration/remote/com.mc.kim.remote.annotation/index.html
+$dokka.location:com.mc.kim.remote.annotation/JsonValue///PointingToDeclaration/remote/com.mc.kim.remote.annotation/-json-value/index.html
+$dokka.location:com.mc.kim.remote.annotation/JsonValue/JsonValue/#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.annotation/-json-value/-json-value.html
+$dokka.location:com.mc.kim.remote.annotation/JsonValue/filedName/#/PointingToDeclaration/remote/com.mc.kim.remote.annotation/-json-value/filed-name.html
+$dokka.location:com.mc.kim.remote.api////PointingToDeclaration/remote/com.mc.kim.remote.api/index.html
+$dokka.location:com.mc.kim.remote.api/Requester.HeaderValue///PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-header-value/index.html
+$dokka.location:com.mc.kim.remote.api/Requester.HeaderValue/HeaderValue/#kotlin.String#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-header-value/-header-value.html
+$dokka.location:com.mc.kim.remote.api/Requester.HeaderValue/key/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-header-value/key.html
+$dokka.location:com.mc.kim.remote.api/Requester.HeaderValue/value/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-header-value/value.html
+$dokka.location:com.mc.kim.remote.api/Requester.QueryValue///PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-query-value/index.html
+$dokka.location:com.mc.kim.remote.api/Requester.QueryValue/QueryValue/#kotlin.String#kotlin.Any/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-query-value/-query-value.html
+$dokka.location:com.mc.kim.remote.api/Requester.QueryValue/key/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-query-value/key.html
+$dokka.location:com.mc.kim.remote.api/Requester.QueryValue/value/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-query-value/value.html
+$dokka.location:com.mc.kim.remote.api/Requester///PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/index.html
+$dokka.location:com.mc.kim.remote.api/Requester/Requester/#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/-requester.html
+$dokka.location:com.mc.kim.remote.api/Requester/addHeader/#com.mc.kim.remote.api.Requester.HeaderValue/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/add-header.html
+$dokka.location:com.mc.kim.remote.api/Requester/addHeaderList/#kotlin.collections.List[com.mc.kim.remote.api.Requester.HeaderValue]/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/add-header-list.html
+$dokka.location:com.mc.kim.remote.api/Requester/connect/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/connect.html
+$dokka.location:com.mc.kim.remote.api/Requester/connect/#com.mc.kim.remote.parser.ResponseParser[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/connect.html
+$dokka.location:com.mc.kim.remote.api/Requester/connectTimeOut/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/connect-time-out.html
+$dokka.location:com.mc.kim.remote.api/Requester/readTimeOut/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/read-time-out.html
+$dokka.location:com.mc.kim.remote.api/Requester/setBody/#TypeParam(bounds=[kotlin.Any?])#com.mc.kim.remote.parser.RequestParser[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/set-body.html
+$dokka.location:com.mc.kim.remote.api/Requester/setBody/#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/set-body.html
+$dokka.location:com.mc.kim.remote.api/Requester/setQuery/#com.mc.kim.remote.api.Requester.QueryValue/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/set-query.html
+$dokka.location:com.mc.kim.remote.api/Requester/setQuery/#kotlin.collections.List[com.mc.kim.remote.api.Requester.QueryValue]/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/set-query.html
+$dokka.location:com.mc.kim.remote.api/Requester/setSSLSocketFactory/#javax.net.ssl.SSLSocketFactory/PointingToDeclaration/remote/com.mc.kim.remote.api/-requester/set-s-s-l-socket-factory.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Error///PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-error/index.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Error/Error/#kotlin.Int#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-error/-error.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Error/errorCode/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-error/error-code.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Error/errorMessage/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-error/error-message.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Fail///PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-fail/index.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Fail/Fail/#java.lang.Exception/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-fail/-fail.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Fail/exception/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-fail/exception.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Success///PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-success/index.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Success/Success/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-success/-success.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult.Success/data/#/PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/-success/data.html
+$dokka.location:com.mc.kim.remote.api/ResponseResult///PointingToDeclaration/remote/com.mc.kim.remote.api/-response-result/index.html
+$dokka.location:com.mc.kim.remote.manager////PointingToDeclaration/remote/com.mc.kim.remote.manager/index.html
+$dokka.location:com.mc.kim.remote.manager/SimpleDataManager///PointingToDeclaration/remote/com.mc.kim.remote.manager/-simple-data-manager/index.html
+$dokka.location:com.mc.kim.remote.manager/SimpleDataManager/SimpleDataManager/#com.mc.kim.remote.Method#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.manager/-simple-data-manager/-simple-data-manager.html
+$dokka.location:com.mc.kim.remote.manager/SimpleDataManager/getRequester/#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.manager/-simple-data-manager/get-requester.html
+$dokka.location:com.mc.kim.remote.parser////PointingToDeclaration/remote/com.mc.kim.remote.parser/index.html
+$dokka.location:com.mc.kim.remote.parser/RequestParser///PointingToDeclaration/remote/com.mc.kim.remote.parser/-request-parser/index.html
+$dokka.location:com.mc.kim.remote.parser/RequestParser/RequestParser/#/PointingToDeclaration/remote/com.mc.kim.remote.parser/-request-parser/-request-parser.html
+$dokka.location:com.mc.kim.remote.parser/RequestParser/requestBodyParser/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/remote/com.mc.kim.remote.parser/-request-parser/request-body-parser.html
+$dokka.location:com.mc.kim.remote.parser/ResponseParser///PointingToDeclaration/remote/com.mc.kim.remote.parser/-response-parser/index.html
+$dokka.location:com.mc.kim.remote.parser/ResponseParser/ResponseParser/#/PointingToDeclaration/remote/com.mc.kim.remote.parser/-response-parser/-response-parser.html
+$dokka.location:com.mc.kim.remote.parser/ResponseParser/responseBodyParser/#kotlin.String/PointingToDeclaration/remote/com.mc.kim.remote.parser/-response-parser/response-body-parser.html
+$dokka.location:com.mc.kim.remote.util////PointingToDeclaration/remote/com.mc.kim.remote.util/index.html
+$dokka.location:com.mc.kim.remote.util/JsonParser///PointingToDeclaration/remote/com.mc.kim.remote.util/-json-parser/index.html
+$dokka.location:com.mc.kim.remote.util/JsonParser/JsonParser/#/PointingToDeclaration/remote/com.mc.kim.remote.util/-json-parser/-json-parser.html
+$dokka.location:com.mc.kim.remote.util/JsonParser/fromJson/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/remote/com.mc.kim.remote.util/-json-parser/from-json.html
+$dokka.location:com.mc.kim.remote.util/JsonParser/toJson/#kotlin.String#kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/remote/com.mc.kim.remote.util/-json-parser/to-json.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion///PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/index.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/INCLUDE/#/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/-i-n-c-l-u-d-e.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/d/#kotlin.String?#kotlin.String?/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/d.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/e/#kotlin.String?#kotlin.String?/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/e.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/i/#kotlin.String?#kotlin.String?/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/i.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/v/#kotlin.String?#kotlin.String?/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/v.html
+$dokka.location:com.mc.kim.remote.util/Log.Companion/w/#kotlin.String?#kotlin.String?/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-companion/w.html
+$dokka.location:com.mc.kim.remote.util/Log///PointingToDeclaration/remote/com.mc.kim.remote.util/-log/index.html
+$dokka.location:com.mc.kim.remote.util/Log/Log/#/PointingToDeclaration/remote/com.mc.kim.remote.util/-log/-log.html
+$dokka.location:com.mc.kim.remote////PointingToDeclaration/remote/com.mc.kim.remote/index.html
+$dokka.location:com.mc.kim.remote/Method.DELETE///PointingToDeclaration/remote/com.mc.kim.remote/-method/-d-e-l-e-t-e/index.html
+$dokka.location:com.mc.kim.remote/Method.DELETE/methodName/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-d-e-l-e-t-e/method-name.html
+$dokka.location:com.mc.kim.remote/Method.DELETE/name/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-d-e-l-e-t-e/name.html
+$dokka.location:com.mc.kim.remote/Method.DELETE/ordinal/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-d-e-l-e-t-e/ordinal.html
+$dokka.location:com.mc.kim.remote/Method.GET///PointingToDeclaration/remote/com.mc.kim.remote/-method/-g-e-t/index.html
+$dokka.location:com.mc.kim.remote/Method.GET/methodName/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-g-e-t/method-name.html
+$dokka.location:com.mc.kim.remote/Method.GET/name/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-g-e-t/name.html
+$dokka.location:com.mc.kim.remote/Method.GET/ordinal/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-g-e-t/ordinal.html
+$dokka.location:com.mc.kim.remote/Method.POST///PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-o-s-t/index.html
+$dokka.location:com.mc.kim.remote/Method.POST/methodName/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-o-s-t/method-name.html
+$dokka.location:com.mc.kim.remote/Method.POST/name/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-o-s-t/name.html
+$dokka.location:com.mc.kim.remote/Method.POST/ordinal/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-o-s-t/ordinal.html
+$dokka.location:com.mc.kim.remote/Method.PUT///PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-u-t/index.html
+$dokka.location:com.mc.kim.remote/Method.PUT/methodName/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-u-t/method-name.html
+$dokka.location:com.mc.kim.remote/Method.PUT/name/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-u-t/name.html
+$dokka.location:com.mc.kim.remote/Method.PUT/ordinal/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/-p-u-t/ordinal.html
+$dokka.location:com.mc.kim.remote/Method///PointingToDeclaration/remote/com.mc.kim.remote/-method/index.html
+$dokka.location:com.mc.kim.remote/Method/methodName/#/PointingToDeclaration/remote/com.mc.kim.remote/-method/method-name.html
+com.mc.kim.remote
+com.mc.kim.remote.annotation
+com.mc.kim.remote.api
+com.mc.kim.remote.manager
+com.mc.kim.remote.parser
+com.mc.kim.remote.util
+

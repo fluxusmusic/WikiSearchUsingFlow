@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 31
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.mc.kim.test"
+        minSdk 14
+        targetSdk 31
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "SeachTest(mc.kim)-v${versionName}")
+        signingConfig signingConfigs.debug
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('src/keystore/SearchWikiKeyStore')
+            storePassword 'mc.kim'
+            keyAlias 'mc.kim'
+            keyPassword 'mc.kim'
+        }
+        release {
+            storeFile file('src/keystore/SearchWikiKeyStore')
+            storePassword 'mc.kim'
+            keyAlias 'mc.kim'
+            keyPassword 'mc.kim'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-rules.pro'
+            proguardFile 'proguard-debug.pro'
+        }
+
+        release {
+            minifyEnabled true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "androidx.fragment:fragment-ktx:${ktx_version}"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${ktx_lifecycle_version}"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:${ktx_lifecycle_version}"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:${swipe_layout_version}"
+    implementation "androidx.core:core-ktx:${ktx_core_version}"
+    implementation "androidx.appcompat:appcompat:${appcompat_version}"
+    implementation "com.google.android.material:material:${material_version}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotilin_version}"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:${kotilin_version}"
+    implementation "androidx.multidex:multidex:${multidex_version}"
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation project(path: ':remote')
+}
