@@ -1,4 +1,4 @@
-package com.mc.kim.test.ui.fragment.Intent
+package com.mc.kim.test.ui.fragment.intent
 
 import com.mc.kim.test.dao.response.WikiData
 

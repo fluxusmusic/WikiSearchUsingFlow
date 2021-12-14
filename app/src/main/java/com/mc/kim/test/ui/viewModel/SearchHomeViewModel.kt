@@ -2,18 +2,13 @@ package com.mc.kim.test.ui.viewModel
 
 import android.content.res.Resources
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mc.kim.remote.api.ResponseResult
-import com.mc.kim.remote.util.Log
-import com.mc.kim.test.R
 import com.mc.kim.test.dao.obj.Image
 import com.mc.kim.test.dao.response.WikiData
 import com.mc.kim.test.dao.response.WikiDataList
-import com.mc.kim.test.ui.fragment.Intent.WikiIntent
+import com.mc.kim.test.ui.fragment.intent.WikiIntent
 import com.mc.kim.test.ui.fragment.viewstate.WikiState
 import com.mc.kim.test.ui.repository.WikiRepository
 import kotlinx.coroutines.channels.Channel

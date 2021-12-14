@@ -16,7 +16,6 @@ import com.mc.kim.test.ui.viewModel.SearchHomeViewModel
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.*
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.mc.kim.remote.api.ResponseResult
 import com.mc.kim.remote.util.Log
 import com.mc.kim.test.R
 import com.mc.kim.test.dao.response.WikiData
@@ -26,7 +25,7 @@ import com.mc.kim.test.toolkit.KEY_WIKI_DATA
 import com.mc.kim.test.toolkit.makeResult
 import com.mc.kim.test.toolkit.startSearchActivity
 import com.mc.kim.test.toolkit.startWebActivity
-import com.mc.kim.test.ui.fragment.Intent.WikiIntent
+import com.mc.kim.test.ui.fragment.intent.WikiIntent
 import com.mc.kim.test.ui.fragment.adapter.SearchResultAdapter
 import com.mc.kim.test.ui.fragment.loader.ResourceLoader
 import com.mc.kim.test.ui.fragment.row.WikiRow
